@@ -8,11 +8,12 @@ import sys
 if sys.platform in ['Windows', 'win32', 'cygwin']:
     import win32gui
     import uiautomation as auto
+    from pywinauto import Application
 elif sys.platform in ['Mac', 'darwin', 'os2', 'os2emx']:
     from AppKit import NSWorkspace
     from Foundation import *
 elif sys.platform in ['linux', 'linux2']:
-        import linux as l
+    import linux as l
 
 active_window_name = ""
 activity_name = ""
@@ -23,7 +24,7 @@ first_time = True
 
 def url_to_name(url):
     string_list = url.split('/')
-    return string_list[2]
+    return string_list[0]
 
 
 def get_active_window():
@@ -43,10 +44,13 @@ def get_active_window():
 
 def get_chrome_url():
     if sys.platform in ['Windows', 'win32', 'cygwin']:
-        window = win32gui.GetForegroundWindow()
-        chromeControl = auto.ControlFromHandle(window)
-        edit = chromeControl.EditControl()
-        return 'https://' + edit.GetValuePattern().Value
+        app = Application(backend='uia')
+        app.connect(title_re=".*Chrome.*")
+        dlg = app.top_window()
+        url = dlg.child_window(
+            title="Address and search bar", control_type="Edit").get_value()
+        return url
+
     elif sys.platform in ['Mac', 'darwin', 'os2', 'os2emx']:
         textOfMyScript = """tell app "google chrome" to get the url of the active tab of window 1"""
         s = NSAppleScript.initWithSource_(
@@ -58,6 +62,7 @@ def get_chrome_url():
               .format(platform=sys.platform))
         print(sys.version)
     return _active_window_name
+
 
 try:
     activeList.initialize_me()
@@ -77,7 +82,6 @@ try:
             if 'Google Chrome' in new_window_name:
                 new_window_name = l.get_chrome_url_x()
 
-        
         if active_window_name != new_window_name:
             print(active_window_name)
             activity_name = active_window_name
@@ -103,8 +107,8 @@ try:
             first_time = False
             active_window_name = new_window_name
 
-        time.sleep(1)
-    
+        time.sleep(2)
+
 except KeyboardInterrupt:
     with open('activities.json', 'w') as json_file:
         json.dump(activeList.serialize(), json_file, indent=4, sort_keys=True)

@@ -1,0 +1,719 @@
+{
+    "activities": [
+        {
+            "name": "autotimer.py - AutoTimer - Visual Studio Code",
+            "time_entries": [
+                {
+                    "days": 0,
+                    "end_time": "2021-08-17 21:40:18",
+                    "hours": 0,
+                    "minutes": 0,
+                    "seconds": 2,
+                    "start_time": "2021-08-17 21:40:16"
+                },
+                {
+                    "days": 0,
+                    "end_time": "2021-08-17 21:44:00",
+                    "hours": 0,
+                    "minutes": 0,
+                    "seconds": 4,
+                    "start_time": "2021-08-17 21:43:56"
+                },
+                {
+                    "days": 0,
+                    "end_time": "2021-08-17 21:46:22",
+                    "hours": 0,
+                    "minutes": 0,
+                    "seconds": 8,
+                    "start_time": "2021-08-17 21:46:13"
+                },
+                {
+                    "days": 0,
+                    "end_time": "2021-08-17 21:49:24",
+                    "hours": 0,
+                    "minutes": 0,
+                    "seconds": 6,
+                    "start_time": "2021-08-17 21:49:18"
+                },
+                {
+                    "days": 0,
+                    "end_time": "2021-08-17 22:11:13",
+                    "hours": 0,
+                    "minutes": 0,
+                    "seconds": 4,
+                    "start_time": "2021-08-17 22:11:09"
+                },
+                {
+                    "days": 0,
+                    "end_time": "2021-08-17 22:11:49",
+                    "hours": 0,
+                    "minutes": 0,
+                    "seconds": 2,
+                    "start_time": "2021-08-17 22:11:47"
+                },
+                {
+                    "days": 0,
+                    "end_time": "2021-08-17 22:12:52",
+                    "hours": 0,
+                    "minutes": 0,
+                    "seconds": 2,
+                    "start_time": "2021-08-17 22:12:50"
+                }
+            ]
+        },
+        {
+            "name": "activities.json - AutoTimer - Visual Studio Code",
+            "time_entries": [
+                {
+                    "days": 0,
+                    "end_time": "2021-08-17 21:40:26",
+                    "hours": 0,
+                    "minutes": 0,
+                    "seconds": 8,
+                    "start_time": "2021-08-17 21:40:18"
+                },
+                {
+                    "days": 0,
+                    "end_time": "2021-08-17 21:40:44",
+                    "hours": 0,
+                    "minutes": 0,
+                    "seconds": 6,
+                    "start_time": "2021-08-17 21:40:38"
+                },
+                {
+                    "days": 0,
+                    "end_time": "2021-08-17 21:41:05",
+                    "hours": 0,
+                    "minutes": 0,
+                    "seconds": 6,
+                    "start_time": "2021-08-17 21:40:59"
+                }
+            ]
+        },
+        {
+            "name": "Task Switching",
+            "time_entries": [
+                {
+                    "days": 0,
+                    "end_time": "2021-08-17 21:40:28",
+                    "hours": 0,
+                    "minutes": 0,
+                    "seconds": 2,
+                    "start_time": "2021-08-17 21:40:26"
+                },
+                {
+                    "days": 0,
+                    "end_time": "2021-08-17 21:40:46",
+                    "hours": 0,
+                    "minutes": 0,
+                    "seconds": 2,
+                    "start_time": "2021-08-17 21:40:44"
+                },
+                {
+                    "days": 0,
+                    "end_time": "2021-08-17 21:46:26",
+                    "hours": 0,
+                    "minutes": 0,
+                    "seconds": 2,
+                    "start_time": "2021-08-17 21:46:24"
+                },
+                {
+                    "days": 0,
+                    "end_time": "2021-08-17 22:11:16",
+                    "hours": 0,
+                    "minutes": 0,
+                    "seconds": 3,
+                    "start_time": "2021-08-17 22:11:13"
+                },
+                {
+                    "days": 0,
+                    "end_time": "2021-08-17 22:12:55",
+                    "hours": 0,
+                    "minutes": 0,
+                    "seconds": 2,
+                    "start_time": "2021-08-17 22:12:52"
+                }
+            ]
+        },
+        {
+            "name": "AutoTimer",
+            "time_entries": [
+                {
+                    "days": 0,
+                    "end_time": "2021-08-17 21:40:38",
+                    "hours": 0,
+                    "minutes": 0,
+                    "seconds": 10,
+                    "start_time": "2021-08-17 21:40:28"
+                },
+                {
+                    "days": 0,
+                    "end_time": "2021-08-17 21:41:11",
+                    "hours": 0,
+                    "minutes": 0,
+                    "seconds": 6,
+                    "start_time": "2021-08-17 21:41:05"
+                },
+                {
+                    "days": 0,
+                    "end_time": "2021-08-17 21:47:24",
+                    "hours": 0,
+                    "minutes": 0,
+                    "seconds": 2,
+                    "start_time": "2021-08-17 21:47:22"
+                }
+            ]
+        },
+        {
+            "name": "",
+            "time_entries": [
+                {
+                    "days": 0,
+                    "end_time": "2021-08-17 21:40:59",
+                    "hours": 0,
+                    "minutes": 0,
+                    "seconds": 12,
+                    "start_time": "2021-08-17 21:40:46"
+                },
+                {
+                    "days": 0,
+                    "end_time": "2021-08-17 21:41:39",
+                    "hours": 0,
+                    "minutes": 0,
+                    "seconds": 19,
+                    "start_time": "2021-08-17 21:41:19"
+                },
+                {
+                    "days": 0,
+                    "end_time": "2021-08-17 22:11:47",
+                    "hours": 0,
+                    "minutes": 0,
+                    "seconds": 4,
+                    "start_time": "2021-08-17 22:11:43"
+                }
+            ]
+        },
+        {
+            "name": "Command Prompt",
+            "time_entries": [
+                {
+                    "days": 0,
+                    "end_time": "2021-08-17 21:41:13",
+                    "hours": 0,
+                    "minutes": 0,
+                    "seconds": 2,
+                    "start_time": "2021-08-17 21:41:11"
+                }
+            ]
+        },
+        {
+            "name": "Select Command Prompt",
+            "time_entries": [
+                {
+                    "days": 0,
+                    "end_time": "2021-08-17 21:41:19",
+                    "hours": 0,
+                    "minutes": 0,
+                    "seconds": 6,
+                    "start_time": "2021-08-17 21:41:13"
+                }
+            ]
+        },
+        {
+            "name": "GitHub - Google Chrome",
+            "time_entries": [
+                {
+                    "days": 0,
+                    "end_time": "2021-08-17 21:46:24",
+                    "hours": 0,
+                    "minutes": 0,
+                    "seconds": 2,
+                    "start_time": "2021-08-17 21:46:22"
+                },
+                {
+                    "days": 0,
+                    "end_time": "2021-08-17 21:46:28",
+                    "hours": 0,
+                    "minutes": 0,
+                    "seconds": 2,
+                    "start_time": "2021-08-17 21:46:26"
+                },
+                {
+                    "days": 0,
+                    "end_time": "2021-08-17 21:46:50",
+                    "hours": 0,
+                    "minutes": 0,
+                    "seconds": 4,
+                    "start_time": "2021-08-17 21:46:46"
+                }
+            ]
+        },
+        {
+            "name": "How to Use Jupyter Notebook in 2020: A Beginner\u2019s Tutorial - Google Chrome",
+            "time_entries": [
+                {
+                    "days": 0,
+                    "end_time": "2021-08-17 21:46:32",
+                    "hours": 0,
+                    "minutes": 0,
+                    "seconds": 4,
+                    "start_time": "2021-08-17 21:46:28"
+                }
+            ]
+        },
+        {
+            "name": "pywin32/win32/src at master \u00b7 mhammond/pywin32 - Google Chrome",
+            "time_entries": [
+                {
+                    "days": 0,
+                    "end_time": "2021-08-17 21:46:36",
+                    "hours": 0,
+                    "minutes": 0,
+                    "seconds": 4,
+                    "start_time": "2021-08-17 21:46:32"
+                }
+            ]
+        },
+        {
+            "name": "win32gui__GetWindowText_meth.html - Google Chrome",
+            "time_entries": [
+                {
+                    "days": 0,
+                    "end_time": "2021-08-17 21:46:40",
+                    "hours": 0,
+                    "minutes": 0,
+                    "seconds": 4,
+                    "start_time": "2021-08-17 21:46:36"
+                }
+            ]
+        },
+        {
+            "name": "Python for Windows Extensions download | SourceForge.net - Google Chrome",
+            "time_entries": [
+                {
+                    "days": 0,
+                    "end_time": "2021-08-17 21:46:46",
+                    "hours": 0,
+                    "minutes": 0,
+                    "seconds": 6,
+                    "start_time": "2021-08-17 21:46:40"
+                }
+            ]
+        },
+        {
+            "name": "(63) One Day Builds: Automatic time tracking using Python - YouTube - Google Chrome",
+            "time_entries": [
+                {
+                    "days": 0,
+                    "end_time": "2021-08-17 21:46:56",
+                    "hours": 0,
+                    "minutes": 0,
+                    "seconds": 6,
+                    "start_time": "2021-08-17 21:46:50"
+                }
+            ]
+        },
+        {
+            "name": "New Tab - Google Chrome",
+            "time_entries": [
+                {
+                    "days": 0,
+                    "end_time": "2021-08-17 21:46:58",
+                    "hours": 0,
+                    "minutes": 0,
+                    "seconds": 2,
+                    "start_time": "2021-08-17 21:46:56"
+                }
+            ]
+        },
+        {
+            "name": "Ilta-Sanomat - IS - Suomen suurin uutismedia - Google Chrome",
+            "time_entries": [
+                {
+                    "days": 0,
+                    "end_time": "2021-08-17 21:47:10",
+                    "hours": 0,
+                    "minutes": 0,
+                    "seconds": 12,
+                    "start_time": "2021-08-17 21:46:58"
+                }
+            ]
+        },
+        {
+            "name": "Me Naiset - Ilta-Sanomat - Google Chrome",
+            "time_entries": [
+                {
+                    "days": 0,
+                    "end_time": "2021-08-17 21:47:22",
+                    "hours": 0,
+                    "minutes": 0,
+                    "seconds": 12,
+                    "start_time": "2021-08-17 21:47:10"
+                },
+                {
+                    "days": 0,
+                    "end_time": "2021-08-17 21:47:28",
+                    "hours": 0,
+                    "minutes": 0,
+                    "seconds": 4,
+                    "start_time": "2021-08-17 21:47:24"
+                }
+            ]
+        },
+        {
+            "name": "Pictures",
+            "time_entries": [
+                {
+                    "days": 0,
+                    "end_time": "2021-08-17 21:47:34",
+                    "hours": 0,
+                    "minutes": 0,
+                    "seconds": 6,
+                    "start_time": "2021-08-17 21:47:28"
+                }
+            ]
+        },
+        {
+            "name": "Camera Roll",
+            "time_entries": [
+                {
+                    "days": 0,
+                    "end_time": "2021-08-17 21:47:38",
+                    "hours": 0,
+                    "minutes": 0,
+                    "seconds": 4,
+                    "start_time": "2021-08-17 21:47:34"
+                }
+            ]
+        },
+        {
+            "name": "SideSync",
+            "time_entries": [
+                {
+                    "days": 0,
+                    "end_time": "2021-08-17 21:47:54",
+                    "hours": 0,
+                    "minutes": 0,
+                    "seconds": 16,
+                    "start_time": "2021-08-17 21:47:38"
+                },
+                {
+                    "days": 0,
+                    "end_time": "2021-08-17 21:49:26",
+                    "hours": 0,
+                    "minutes": 0,
+                    "seconds": 2,
+                    "start_time": "2021-08-17 21:49:24"
+                },
+                {
+                    "days": 0,
+                    "end_time": "2021-08-17 22:11:53",
+                    "hours": 0,
+                    "minutes": 0,
+                    "seconds": 4,
+                    "start_time": "2021-08-17 22:11:49"
+                }
+            ]
+        },
+        {
+            "name": "https://",
+            "time_entries": [
+                {
+                    "days": 0,
+                    "end_time": "2021-08-17 21:49:32",
+                    "hours": 0,
+                    "minutes": 0,
+                    "seconds": 5,
+                    "start_time": "2021-08-17 21:49:26"
+                },
+                {
+                    "days": 0,
+                    "end_time": "2021-08-17 21:50:02",
+                    "hours": 0,
+                    "minutes": 0,
+                    "seconds": 20,
+                    "start_time": "2021-08-17 21:49:41"
+                },
+                {
+                    "days": 0,
+                    "end_time": "2021-08-17 21:50:11",
+                    "hours": 0,
+                    "minutes": 0,
+                    "seconds": 7,
+                    "start_time": "2021-08-17 21:50:04"
+                },
+                {
+                    "days": 0,
+                    "end_time": "2021-08-17 21:50:51",
+                    "hours": 0,
+                    "minutes": 0,
+                    "seconds": 37,
+                    "start_time": "2021-08-17 21:50:14"
+                }
+            ]
+        },
+        {
+            "name": "https://Lis\u00e4\u00e4 julkinen kommentti\u2026",
+            "time_entries": [
+                {
+                    "days": 0,
+                    "end_time": "2021-08-17 21:49:34",
+                    "hours": 0,
+                    "minutes": 0,
+                    "seconds": 2,
+                    "start_time": "2021-08-17 21:49:32"
+                },
+                {
+                    "days": 0,
+                    "end_time": "2021-08-17 21:49:41",
+                    "hours": 0,
+                    "minutes": 0,
+                    "seconds": 2,
+                    "start_time": "2021-08-17 21:49:39"
+                }
+            ]
+        },
+        {
+            "name": "https://timgolden.me.uk/pywin32-docs/win32gui__GetWindowText_meth.html",
+            "time_entries": [
+                {
+                    "days": 0,
+                    "end_time": "2021-08-17 21:49:39",
+                    "hours": 0,
+                    "minutes": 0,
+                    "seconds": 5,
+                    "start_time": "2021-08-17 21:49:34"
+                }
+            ]
+        },
+        {
+            "name": "https://youtube.com/watch?v=ZBLYcvPl1MA",
+            "time_entries": [
+                {
+                    "days": 0,
+                    "end_time": "2021-08-17 21:50:04",
+                    "hours": 0,
+                    "minutes": 0,
+                    "seconds": 2,
+                    "start_time": "2021-08-17 21:50:02"
+                }
+            ]
+        },
+        {
+            "name": "https://is.fi/taloussanomat/",
+            "time_entries": [
+                {
+                    "days": 0,
+                    "end_time": "2021-08-17 21:50:14",
+                    "hours": 0,
+                    "minutes": 0,
+                    "seconds": 2,
+                    "start_time": "2021-08-17 21:50:11"
+                }
+            ]
+        },
+        {
+            "name": "pywinauto.readthedocs.io/en/latest/#installation",
+            "time_entries": [
+                {
+                    "days": 0,
+                    "end_time": "2021-08-17 22:11:19",
+                    "hours": 0,
+                    "minutes": 0,
+                    "seconds": 3,
+                    "start_time": "2021-08-17 22:11:16"
+                }
+            ]
+        },
+        {
+            "name": "stackoverflow.com/questions/10266281/obtain-active-window-using-python",
+            "time_entries": [
+                {
+                    "days": 0,
+                    "end_time": "2021-08-17 22:11:25",
+                    "hours": 0,
+                    "minutes": 0,
+                    "seconds": 6,
+                    "start_time": "2021-08-17 22:11:19"
+                }
+            ]
+        },
+        {
+            "name": "tubesort.com/watch/ZBLYcvPl1MA",
+            "time_entries": [
+                {
+                    "days": 0,
+                    "end_time": "2021-08-17 22:11:32",
+                    "hours": 0,
+                    "minutes": 0,
+                    "seconds": 5,
+                    "start_time": "2021-08-17 22:11:26"
+                }
+            ]
+        },
+        {
+            "name": "google.com/search?q=python+uiautomation&oq=python+uiautomation&aqs=chrome..69i57j0i13l3j0i10i13i30j69i60l3.4709j0j7&sourceid=chrome&ie=UTF-8",
+            "time_entries": [
+                {
+                    "days": 0,
+                    "end_time": "2021-08-17 22:11:38",
+                    "hours": 0,
+                    "minutes": 0,
+                    "seconds": 6,
+                    "start_time": "2021-08-17 22:11:32"
+                }
+            ]
+        },
+        {
+            "name": "github.com/yinkaisheng/Python-UIAutomation-for-Windows/tree/master/uiautomation",
+            "time_entries": [
+                {
+                    "days": 0,
+                    "end_time": "2021-08-17 22:11:41",
+                    "hours": 0,
+                    "minutes": 0,
+                    "seconds": 3,
+                    "start_time": "2021-08-17 22:11:38"
+                }
+            ]
+        },
+        {
+            "name": "pywinauto.readthedocs.io/en/latest/getting_started.html",
+            "time_entries": [
+                {
+                    "days": 0,
+                    "end_time": "2021-08-17 22:11:43",
+                    "hours": 0,
+                    "minutes": 0,
+                    "seconds": 2,
+                    "start_time": "2021-08-17 22:11:41"
+                }
+            ]
+        },
+        {
+            "name": "github.com",
+            "time_entries": [
+                {
+                    "days": 0,
+                    "end_time": "2021-08-17 22:12:58",
+                    "hours": 0,
+                    "minutes": 0,
+                    "seconds": 3,
+                    "start_time": "2021-08-17 22:12:55"
+                }
+            ]
+        },
+        {
+            "name": "google.com",
+            "time_entries": [
+                {
+                    "days": 0,
+                    "end_time": "2021-08-17 22:13:01",
+                    "hours": 0,
+                    "minutes": 0,
+                    "seconds": 3,
+                    "start_time": "2021-08-17 22:12:58"
+                },
+                {
+                    "days": 0,
+                    "end_time": "2021-08-17 22:13:38",
+                    "hours": 0,
+                    "minutes": 0,
+                    "seconds": 2,
+                    "start_time": "2021-08-17 22:13:35"
+                }
+            ]
+        },
+        {
+            "name": "sijoitustieto.fi",
+            "time_entries": [
+                {
+                    "days": 0,
+                    "end_time": "2021-08-17 22:13:05",
+                    "hours": 0,
+                    "minutes": 0,
+                    "seconds": 3,
+                    "start_time": "2021-08-17 22:13:01"
+                }
+            ]
+        },
+        {
+            "name": "pywinauto.readthedocs.io",
+            "time_entries": [
+                {
+                    "days": 0,
+                    "end_time": "2021-08-17 22:13:14",
+                    "hours": 0,
+                    "minutes": 0,
+                    "seconds": 9,
+                    "start_time": "2021-08-17 22:13:05"
+                }
+            ]
+        },
+        {
+            "name": "stackoverflow.com",
+            "time_entries": [
+                {
+                    "days": 0,
+                    "end_time": "2021-08-17 22:13:20",
+                    "hours": 0,
+                    "minutes": 0,
+                    "seconds": 6,
+                    "start_time": "2021-08-17 22:13:14"
+                }
+            ]
+        },
+        {
+            "name": "tubesort.com",
+            "time_entries": [
+                {
+                    "days": 0,
+                    "end_time": "2021-08-17 22:13:26",
+                    "hours": 0,
+                    "minutes": 0,
+                    "seconds": 5,
+                    "start_time": "2021-08-17 22:13:20"
+                }
+            ]
+        },
+        {
+            "name": "yle.fi",
+            "time_entries": [
+                {
+                    "days": 0,
+                    "end_time": "2021-08-17 22:13:32",
+                    "hours": 0,
+                    "minutes": 0,
+                    "seconds": 6,
+                    "start_time": "2021-08-17 22:13:26"
+                }
+            ]
+        },
+        {
+            "name": "kotipizza.fi",
+            "time_entries": [
+                {
+                    "days": 0,
+                    "end_time": "2021-08-17 22:13:35",
+                    "hours": 0,
+                    "minutes": 0,
+                    "seconds": 3,
+                    "start_time": "2021-08-17 22:13:32"
+                }
+            ]
+        },
+        {
+            "name": "fi.wikipedia.org",
+            "time_entries": [
+                {
+                    "days": 0,
+                    "end_time": "2021-08-17 22:13:48",
+                    "hours": 0,
+                    "minutes": 0,
+                    "seconds": 9,
+                    "start_time": "2021-08-17 22:13:38"
+                }
+            ]
+        }
+    ]
+}
