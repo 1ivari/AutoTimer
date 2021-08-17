@@ -7,7 +7,6 @@ import datetime
 import sys
 if sys.platform in ['Windows', 'win32', 'cygwin']:
     import win32gui
-    import uiautomation as auto
     from pywinauto import Application
 elif sys.platform in ['Mac', 'darwin', 'os2', 'os2emx']:
     from AppKit import NSWorkspace
@@ -21,28 +20,39 @@ start_time = datetime.datetime.now()
 activeList = AcitivyList([])
 first_time = True
 
+# split URL returned by Pywin and take the first part e.g. youtube.com from youtube.com/video/292929
+
 
 def url_to_name(url):
     string_list = url.split('/')
     return string_list[0]
 
+# get the window that is active at a given time
+
 
 def get_active_window():
     _active_window_name = None
+    # Windows used
     if sys.platform in ['Windows', 'win32', 'cygwin']:
         window = win32gui.GetForegroundWindow()
         _active_window_name = win32gui.GetWindowText(window)
+    # Mac used
     elif sys.platform in ['Mac', 'darwin', 'os2', 'os2emx']:
         _active_window_name = (NSWorkspace.sharedWorkspace()
                                .activeApplication()['NSApplicationName'])
+    # Other platforms not supported
     else:
         print("sys.platform={platform} is not supported."
               .format(platform=sys.platform))
         print(sys.version)
     return _active_window_name
 
+# get the url from chrome address bar - consider adding Edge support here
+
 
 def get_chrome_url():
+
+   # windows platform
     if sys.platform in ['Windows', 'win32', 'cygwin']:
         app = Application(backend='uia')
         app.connect(title_re=".*Chrome.*")
@@ -51,17 +61,31 @@ def get_chrome_url():
             title="Address and search bar", control_type="Edit").get_value()
         return url
 
+    # MacOs
     elif sys.platform in ['Mac', 'darwin', 'os2', 'os2emx']:
         textOfMyScript = """tell app "google chrome" to get the url of the active tab of window 1"""
         s = NSAppleScript.initWithSource_(
             NSAppleScript.alloc(), textOfMyScript)
         results, err = s.executeAndReturnError_(None)
         return results.stringValue()
+
+    # Unsupported platforms
     else:
         print("sys.platform={platform} is not supported."
               .format(platform=sys.platform))
         print(sys.version)
     return _active_window_name
+
+
+def get_edge_url():
+    if sys.platform in ['Windows', 'win32', 'cygwin']:
+        app = Application(backend='uia')
+        app.connect(title_re=".*Edge.*", found_index=0)
+        dlg = app.top_window()
+        wrapper = dlg.child_window(title="App bar", control_type="ToolBar")
+        url = wrapper.descendants(control_type='Edit')[0]
+        retval = url.get_value().split('/')
+        return retval[2]
 
 
 try:
@@ -77,6 +101,8 @@ try:
             new_window_name = get_active_window()
             if 'Google Chrome' in new_window_name:
                 new_window_name = url_to_name(get_chrome_url())
+            elif 'Edge' in new_window_name:
+                new_window_name = get_edge_url()
         if sys.platform in ['linux', 'linux2']:
             new_window_name = l.get_active_window_x()
             if 'Google Chrome' in new_window_name:
@@ -107,7 +133,8 @@ try:
             first_time = False
             active_window_name = new_window_name
 
-        time.sleep(2)
+        # sleep for 1 second
+        time.sleep(1)
 
 except KeyboardInterrupt:
     with open('activities.json', 'w') as json_file:
