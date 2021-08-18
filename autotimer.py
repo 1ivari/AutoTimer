@@ -100,9 +100,17 @@ try:
         if sys.platform not in ['linux', 'linux2']:
             new_window_name = get_active_window()
             if 'Google Chrome' in new_window_name:
-                new_window_name = url_to_name(get_chrome_url())
+                try:
+                    new_window_name = url_to_name(get_chrome_url())
+                    new_window_name = "Web - " + new_window_name
+                except:
+                    new_window_name = "Web - " + new_window_name
             elif 'Edge' in new_window_name:
-                new_window_name = get_edge_url()
+                try:
+                    new_window_name = get_edge_url()
+                    new_window_name = "Web - " + new_window_name
+                except:
+                    new_window_name = "Web - " + new_window_name
         if sys.platform in ['linux', 'linux2']:
             new_window_name = l.get_active_window_x()
             if 'Google Chrome' in new_window_name:
