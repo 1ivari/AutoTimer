@@ -20,12 +20,44 @@ start_time = datetime.datetime.now()
 activeList = AcitivyList([])
 first_time = True
 
+json_name = "log.json"
+
 # split URL returned by Pywin and take the first part e.g. youtube.com from youtube.com/video/292929
 
 
 def url_to_name(url):
     string_list = url.split('/')
     return string_list[0]
+
+# cleanup common active windows to minimize the variety of activities
+
+
+def getCategory(activityName):
+    # set identifiers for Outlook
+    retval = activityName
+    outlookIdentifiers = ['Outlook', 'RE:', 'Inbox']
+    teamsIdentifiers = ['Teams']
+    webIdentifiers = ["Chrome", "Edge"]
+    excelIdentifiers = ["Exce"]
+
+    if any(substring in activityName for substring in outlookIdentifiers):
+        retval = "Outlook"
+
+    elif any(substring in activityName for substring in webIdentifiers):
+        retval = "Web"
+
+    elif any(substring in activityName for substring in excelIdentifiers):
+        retval = "Excel"
+
+    return retval
+
+
+"""     if activityName in outlookIdentifiers:
+        retval = "Outlook:" + activityName
+
+    elif activityName in webIdentifiers:
+        retval = "Web:" + activityName """
+
 
 # get the window that is active at a given time
 
@@ -102,23 +134,23 @@ try:
             if 'Google Chrome' in new_window_name:
                 try:
                     new_window_name = url_to_name(get_chrome_url())
-                    new_window_name = "Web - " + new_window_name
+                    new_window_name = "Chrome - " + new_window_name
                 except:
-                    new_window_name = "Web - " + new_window_name
+                    new_window_name = "Chrome - " + new_window_name
             elif 'Edge' in new_window_name:
                 try:
                     new_window_name = get_edge_url()
-                    new_window_name = "Web - " + new_window_name
+                    new_window_name = "Edge - " + new_window_name
                 except:
-                    new_window_name = "Web - " + new_window_name
+                    new_window_name = "Edge - " + new_window_name
         if sys.platform in ['linux', 'linux2']:
             new_window_name = l.get_active_window_x()
             if 'Google Chrome' in new_window_name:
                 new_window_name = l.get_chrome_url_x()
 
         if active_window_name != new_window_name:
-            print(active_window_name)
             activity_name = active_window_name
+            print(activity_name)
 
             if not first_time:
                 end_time = datetime.datetime.now()
@@ -132,9 +164,11 @@ try:
                         activity.time_entries.append(time_entry)
 
                 if not exists:
-                    activity = Activity(activity_name, [time_entry])
+                    category = getCategory(active_window_name)
+                    print(category)
+                    activity = Activity(category, activity_name, [time_entry])
                     activeList.activities.append(activity)
-                with open('activities.json', 'w') as json_file:
+                with open(json_name, 'w') as json_file:
                     json.dump(activeList.serialize(), json_file,
                               indent=4, sort_keys=True)
                     start_time = datetime.datetime.now()
@@ -145,5 +179,5 @@ try:
         time.sleep(1)
 
 except KeyboardInterrupt:
-    with open('activities.json', 'w') as json_file:
+    with open(json_name, 'w') as json_file:
         json.dump(activeList.serialize(), json_file, indent=4, sort_keys=True)
