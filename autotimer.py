@@ -39,6 +39,9 @@ def getCategory(activityName):
     teamsIdentifiers = ['Teams']
     webIdentifiers = ["Chrome", "Edge"]
     excelIdentifiers = ["Exce"]
+    wordIdentifiers = ["Word"]
+    pptIdentifiers = ["Powerpoint"]
+    pdfIdentifiers = ["Adobe", "pdf"]
 
     if any(substring in activityName for substring in outlookIdentifiers):
         retval = "Outlook"
@@ -48,6 +51,18 @@ def getCategory(activityName):
 
     elif any(substring in activityName for substring in excelIdentifiers):
         retval = "Excel"
+        
+    elif any(substring in activityName for substring in teamsIdentifiers):
+        retval = "Teams"
+    
+    elif any(substring in activityName for substring in wordIdentifiers):
+        retval = "Word"
+    
+    elif any(substring in activityName for substring in pptIdentifiers):
+        retval = "Powerpoint"
+        
+    elif any(substring in activityName for substring in pdfIdentifiers):
+        retval = "PDF"
 
     return retval
 
